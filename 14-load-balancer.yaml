@@ -12,7 +12,7 @@ spec:
     demo: lb  
   ports:
   - protocol: TCP
-    port: 81    #service port
+    port: 8080    #service port
     targetPort: 80   #target container port
     nodePort: 30007
 
