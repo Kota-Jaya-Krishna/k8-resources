@@ -8,6 +8,6 @@ spec:
     image: nginx
     envFrom:
     - configMapRef:
-      name: myconfig
+        name: myconfig 
 
 
