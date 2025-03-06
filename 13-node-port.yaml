@@ -12,8 +12,9 @@ spec:
     demo: np
   ports:
   - protocol: TCP
-    port: 80    #service port
+    port: 81    #service port
     targetPort: 80   #target container port
+    nodePort: 30007
 
 
 ---
