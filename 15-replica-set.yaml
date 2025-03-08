@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: nginx
+  name: nginx-replicaset
   # these labels are replicaset labels
   labels:
     app: frontend
@@ -17,6 +17,7 @@ spec:
   # pod template
   template:
     metadata:
+      name: nginx-pod
       labels:
         app: frontend
         tier: web
