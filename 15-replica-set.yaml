@@ -18,6 +18,7 @@ spec:
   template:
     metadata:
       name: nginx-pod
+      # these labels are pods
       labels:
         app: frontend
         tier: web
