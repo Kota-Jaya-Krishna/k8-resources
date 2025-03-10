@@ -30,7 +30,7 @@ spec:
   volumes:
   - name: persistent-storage
     persistentVolumeClaim:
-      claimName: ebs-dynamic  # here claimName and  volumeName  both should be same name
+      claimName: ebs-dynamic    # here claimName and  name in metadata for PersistentVolumeClaim  both should be same name
 
 ---
 
