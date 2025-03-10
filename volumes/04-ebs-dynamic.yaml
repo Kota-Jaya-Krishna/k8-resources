@@ -4,7 +4,8 @@ metadata:
   name: ebs-dynamic
 spec:
   storageClassName: "ebs-sc"     # Empty string must be explicitly set otherwise default StorageClass will be set
-  volumeName: ebs-dynamic   # PV name
+  accessModes:
+    - ReadWriteOnce
   resources:
     requests:
       storage: 19Gi  # we should give 30Gi or less then 30Gi, because i have volumenonly 30Gi
